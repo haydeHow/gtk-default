@@ -10,6 +10,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 pkg_check_modules(GLIB REQUIRED glib-2.0)
 pkg_check_modules(CURL REQUIRED libcurl)
+pkg_check_modules(SQLITE3 REQUIRED sqlite3)
 
 # Add the executable
 add_executable(my_gtk_app main.c)
@@ -18,6 +19,7 @@ add_executable(my_gtk_app main.c)
 target_include_directories(my_gtk_app PRIVATE
     ${GTK3_INCLUDE_DIRS}
     ${GLIB_INCLUDE_DIRS}
+    ${SQLITE3_INCLUDE_DIRS}
 )
 
 # Link libraries for GTK3, GLib, and libcurl
@@ -25,6 +27,7 @@ target_link_libraries(my_gtk_app
     ${GTK3_LIBRARIES}
     ${GLIB_LIBRARIES}
     ${CURL_LIBRARIES}
+    ${SQLITE3_LIBRARIES}
 )
 
 # Handle GTK3 and GLib compile flags
