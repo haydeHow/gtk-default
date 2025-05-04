@@ -1,0 +1,3 @@
+/home/hayde/Desktop/c/build/CMakeFiles/my_gtk_app.dir
+/home/hayde/Desktop/c/build/CMakeFiles/edit_cache.dir
+/home/hayde/Desktop/c/build/CMakeFiles/rebuild_cache.dir
