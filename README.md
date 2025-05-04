@@ -1,2 +1,0 @@
-# gtk-default
-# gtk-default
